@@ -27,20 +27,15 @@ const submitHandler = (event)=>{
     const formData = new FormData(search)
     //const searchTerm = formData.get("searchTerm")
     //console.log(searchTerm)
-    let numHidden = document.querySelectorAll(".hidden")
-
-   // console.log("pre unhiding num hidden",numHidden)
+    //let numHidden = document.querySelectorAll(".hidden")
+    // console.log("pre unhiding num hidden",numHidden)
     //console.log("pre unhiding doc.query for hidden elements",document.querySelectorAll(".hidden"))
-
     unhideArticles()
-
     //console.log("post unhiding",numHidden)
     //console.log("post unhiding",document.querySelectorAll(".hidden"))
-
-
     validateForm(formData)
     theActualSearch(formData)
-    console.log("post search",document.querySelectorAll(".hidden"))
+    //console.log("post search",document.querySelectorAll(".hidden"))
     //console.log(searchButton.parentNode)
 }
 
